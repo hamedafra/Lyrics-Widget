@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050C3D921CF4EB4C006C753E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 050C3D911CF4EB4C006C753E /* Images.xcassets */; };
+		05215FD91CF4DDD0003FA166 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05215FD81CF4DDD0003FA166 /* AppDelegate.m */; };
+		05215FDC1CF4DDD0003FA166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05215FDB1CF4DDD0003FA166 /* main.m */; };
+		05215FDF1CF4DDD0003FA166 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05215FDE1CF4DDD0003FA166 /* ViewController.m */; };
+		05215FE11CF4DDD0003FA166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05215FE01CF4DDD0003FA166 /* Assets.xcassets */; };
+		05215FE41CF4DDD0003FA166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05215FE21CF4DDD0003FA166 /* Main.storyboard */; };
+		05215FEF1CF4DDD0003FA166 /* LyricsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05215FEE1CF4DDD0003FA166 /* LyricsTests.m */; };
+		05215FFA1CF4DDD0003FA166 /* LyricsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05215FF91CF4DDD0003FA166 /* LyricsUITests.m */; };
+		0521600E1CF4DDF6003FA166 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0521600D1CF4DDF6003FA166 /* NotificationCenter.framework */; };
+		0521601B1CF4DDF6003FA166 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 052160191CF4DDF6003FA166 /* InfoPlist.strings */; };
+		0521601E1CF4DDF6003FA166 /* Lyrics Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0521600B1CF4DDF6003FA166 /* Lyrics Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		052C20191CF5F31800810779 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 052C20171CF5F31800810779 /* TodayViewController.xib */; };
+		05F2F3141CF4E13B00816E80 /* LyricsFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F2F3131CF4E13B00816E80 /* LyricsFinder.m */; };
+		05F2F3161CF4E2D400816E80 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052160131CF4DDF6003FA166 /* TodayViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05215FEB1CF4DDD0003FA166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05215FCC1CF4DDD0003FA166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05215FD31CF4DDD0003FA166;
+			remoteInfo = Lyrics;
+		};
+		05215FF61CF4DDD0003FA166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05215FCC1CF4DDD0003FA166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05215FD31CF4DDD0003FA166;
+			remoteInfo = Lyrics;
+		};
+		0521601C1CF4DDF6003FA166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05215FCC1CF4DDD0003FA166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0521600A1CF4DDF6003FA166;
+			remoteInfo = "Lyrics Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		052160221CF4DDF6003FA166 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0521601E1CF4DDF6003FA166 /* Lyrics Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		050C3D911CF4EB4C006C753E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05215FD41CF4DDD0003FA166 /* Lyrics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lyrics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05215FD71CF4DDD0003FA166 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05215FD81CF4DDD0003FA166 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05215FDB1CF4DDD0003FA166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05215FDD1CF4DDD0003FA166 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		05215FDE1CF4DDD0003FA166 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		05215FE01CF4DDD0003FA166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05215FE31CF4DDD0003FA166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05215FE51CF4DDD0003FA166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05215FEA1CF4DDD0003FA166 /* LyricsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05215FEE1CF4DDD0003FA166 /* LyricsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricsTests.m; sourceTree = "<group>"; };
+		05215FF01CF4DDD0003FA166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05215FF51CF4DDD0003FA166 /* LyricsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05215FF91CF4DDD0003FA166 /* LyricsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricsUITests.m; sourceTree = "<group>"; };
+		05215FFB1CF4DDD0003FA166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0521600B1CF4DDF6003FA166 /* Lyrics Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lyrics Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0521600D1CF4DDF6003FA166 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		052160111CF4DDF6003FA166 /* Lyrics_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Lyrics_Widget.entitlements; sourceTree = "<group>"; };
+		052160121CF4DDF6003FA166 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		052160131CF4DDF6003FA166 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		052160181CF4DDF6003FA166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0521601A1CF4DDF6003FA166 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		052C20181CF5F31800810779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		05F2F3111CF4E13B00816E80 /* iTunes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		05F2F3121CF4E13B00816E80 /* LyricsFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsFinder.h; sourceTree = "<group>"; };
+		05F2F3131CF4E13B00816E80 /* LyricsFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsFinder.m; sourceTree = "<group>"; };
+		05F2F3151CF4E1D700816E80 /* Lyrics Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Lyrics Widget.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05215FD11CF4DDD0003FA166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FE71CF4DDD0003FA166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FF21CF4DDD0003FA166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052160081CF4DDF6003FA166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0521600E1CF4DDF6003FA166 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05215FCB1CF4DDD0003FA166 = {
+			isa = PBXGroup;
+			children = (
+				05215FD61CF4DDD0003FA166 /* Lyrics */,
+				05215FED1CF4DDD0003FA166 /* LyricsTests */,
+				05215FF81CF4DDD0003FA166 /* LyricsUITests */,
+				0521600F1CF4DDF6003FA166 /* Lyrics Widget */,
+				0521600C1CF4DDF6003FA166 /* Frameworks */,
+				05215FD51CF4DDD0003FA166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05215FD51CF4DDD0003FA166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05215FD41CF4DDD0003FA166 /* Lyrics.app */,
+				05215FEA1CF4DDD0003FA166 /* LyricsTests.xctest */,
+				05215FF51CF4DDD0003FA166 /* LyricsUITests.xctest */,
+				0521600B1CF4DDF6003FA166 /* Lyrics Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05215FD61CF4DDD0003FA166 /* Lyrics */ = {
+			isa = PBXGroup;
+			children = (
+				05215FD71CF4DDD0003FA166 /* AppDelegate.h */,
+				05215FD81CF4DDD0003FA166 /* AppDelegate.m */,
+				05215FDD1CF4DDD0003FA166 /* ViewController.h */,
+				05215FDE1CF4DDD0003FA166 /* ViewController.m */,
+				05215FE01CF4DDD0003FA166 /* Assets.xcassets */,
+				05215FE21CF4DDD0003FA166 /* Main.storyboard */,
+				05215FE51CF4DDD0003FA166 /* Info.plist */,
+				05215FDA1CF4DDD0003FA166 /* Supporting Files */,
+			);
+			path = Lyrics;
+			sourceTree = "<group>";
+		};
+		05215FDA1CF4DDD0003FA166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05215FDB1CF4DDD0003FA166 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05215FED1CF4DDD0003FA166 /* LyricsTests */ = {
+			isa = PBXGroup;
+			children = (
+				05215FEE1CF4DDD0003FA166 /* LyricsTests.m */,
+				05215FF01CF4DDD0003FA166 /* Info.plist */,
+			);
+			path = LyricsTests;
+			sourceTree = "<group>";
+		};
+		05215FF81CF4DDD0003FA166 /* LyricsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05215FF91CF4DDD0003FA166 /* LyricsUITests.m */,
+				05215FFB1CF4DDD0003FA166 /* Info.plist */,
+			);
+			path = LyricsUITests;
+			sourceTree = "<group>";
+		};
+		0521600C1CF4DDF6003FA166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0521600D1CF4DDF6003FA166 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0521600F1CF4DDF6003FA166 /* Lyrics Widget */ = {
+			isa = PBXGroup;
+			children = (
+				050C3D911CF4EB4C006C753E /* Images.xcassets */,
+				05F2F3151CF4E1D700816E80 /* Lyrics Widget.entitlements */,
+				05F2F3111CF4E13B00816E80 /* iTunes.h */,
+				05F2F3121CF4E13B00816E80 /* LyricsFinder.h */,
+				05F2F3131CF4E13B00816E80 /* LyricsFinder.m */,
+				052160121CF4DDF6003FA166 /* TodayViewController.h */,
+				052160131CF4DDF6003FA166 /* TodayViewController.m */,
+				052160181CF4DDF6003FA166 /* Info.plist */,
+				052160191CF4DDF6003FA166 /* InfoPlist.strings */,
+				052C20171CF5F31800810779 /* TodayViewController.xib */,
+				052160101CF4DDF6003FA166 /* Supporting Files */,
+			);
+			path = "Lyrics Widget";
+			sourceTree = "<group>";
+		};
+		052160101CF4DDF6003FA166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				052160111CF4DDF6003FA166 /* Lyrics_Widget.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05215FD31CF4DDD0003FA166 /* Lyrics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05215FFE1CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "Lyrics" */;
+			buildPhases = (
+				05215FD01CF4DDD0003FA166 /* Sources */,
+				05215FD11CF4DDD0003FA166 /* Frameworks */,
+				05215FD21CF4DDD0003FA166 /* Resources */,
+				052160221CF4DDF6003FA166 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0521601D1CF4DDF6003FA166 /* PBXTargetDependency */,
+			);
+			name = Lyrics;
+			productName = Lyrics;
+			productReference = 05215FD41CF4DDD0003FA166 /* Lyrics.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05215FE91CF4DDD0003FA166 /* LyricsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052160011CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "LyricsTests" */;
+			buildPhases = (
+				05215FE61CF4DDD0003FA166 /* Sources */,
+				05215FE71CF4DDD0003FA166 /* Frameworks */,
+				05215FE81CF4DDD0003FA166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05215FEC1CF4DDD0003FA166 /* PBXTargetDependency */,
+			);
+			name = LyricsTests;
+			productName = LyricsTests;
+			productReference = 05215FEA1CF4DDD0003FA166 /* LyricsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05215FF41CF4DDD0003FA166 /* LyricsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 052160041CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "LyricsUITests" */;
+			buildPhases = (
+				05215FF11CF4DDD0003FA166 /* Sources */,
+				05215FF21CF4DDD0003FA166 /* Frameworks */,
+				05215FF31CF4DDD0003FA166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05215FF71CF4DDD0003FA166 /* PBXTargetDependency */,
+			);
+			name = LyricsUITests;
+			productName = LyricsUITests;
+			productReference = 05215FF51CF4DDD0003FA166 /* LyricsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		0521600A1CF4DDF6003FA166 /* Lyrics Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0521601F1CF4DDF6003FA166 /* Build configuration list for PBXNativeTarget "Lyrics Widget" */;
+			buildPhases = (
+				052160071CF4DDF6003FA166 /* Sources */,
+				052160081CF4DDF6003FA166 /* Frameworks */,
+				052160091CF4DDF6003FA166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lyrics Widget";
+			productName = "Lyrics Widget";
+			productReference = 0521600B1CF4DDF6003FA166 /* Lyrics Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05215FCC1CF4DDD0003FA166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Hamed;
+				TargetAttributes = {
+					05215FD31CF4DDD0003FA166 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					05215FE91CF4DDD0003FA166 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 05215FD31CF4DDD0003FA166;
+					};
+					05215FF41CF4DDD0003FA166 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 05215FD31CF4DDD0003FA166;
+					};
+					0521600A1CF4DDF6003FA166 = {
+						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 05215FCF1CF4DDD0003FA166 /* Build configuration list for PBXProject "Lyrics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05215FCB1CF4DDD0003FA166;
+			productRefGroup = 05215FD51CF4DDD0003FA166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05215FD31CF4DDD0003FA166 /* Lyrics */,
+				05215FE91CF4DDD0003FA166 /* LyricsTests */,
+				05215FF41CF4DDD0003FA166 /* LyricsUITests */,
+				0521600A1CF4DDF6003FA166 /* Lyrics Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05215FD21CF4DDD0003FA166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05215FE11CF4DDD0003FA166 /* Assets.xcassets in Resources */,
+				05215FE41CF4DDD0003FA166 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FE81CF4DDD0003FA166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FF31CF4DDD0003FA166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052160091CF4DDF6003FA166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				050C3D921CF4EB4C006C753E /* Images.xcassets in Resources */,
+				0521601B1CF4DDF6003FA166 /* InfoPlist.strings in Resources */,
+				052C20191CF5F31800810779 /* TodayViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05215FD01CF4DDD0003FA166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05215FDF1CF4DDD0003FA166 /* ViewController.m in Sources */,
+				05215FDC1CF4DDD0003FA166 /* main.m in Sources */,
+				05215FD91CF4DDD0003FA166 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FE61CF4DDD0003FA166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05215FEF1CF4DDD0003FA166 /* LyricsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05215FF11CF4DDD0003FA166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05215FFA1CF4DDD0003FA166 /* LyricsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		052160071CF4DDF6003FA166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F2F3161CF4E2D400816E80 /* TodayViewController.m in Sources */,
+				05F2F3141CF4E13B00816E80 /* LyricsFinder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05215FEC1CF4DDD0003FA166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05215FD31CF4DDD0003FA166 /* Lyrics */;
+			targetProxy = 05215FEB1CF4DDD0003FA166 /* PBXContainerItemProxy */;
+		};
+		05215FF71CF4DDD0003FA166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05215FD31CF4DDD0003FA166 /* Lyrics */;
+			targetProxy = 05215FF61CF4DDD0003FA166 /* PBXContainerItemProxy */;
+		};
+		0521601D1CF4DDF6003FA166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0521600A1CF4DDF6003FA166 /* Lyrics Widget */;
+			targetProxy = 0521601C1CF4DDF6003FA166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05215FE21CF4DDD0003FA166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05215FE31CF4DDD0003FA166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		052160191CF4DDF6003FA166 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0521601A1CF4DDF6003FA166 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		052C20171CF5F31800810779 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				052C20181CF5F31800810779 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05215FFC1CF4DDD0003FA166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		05215FFD1CF4DDD0003FA166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		05215FFF1CF4DDD0003FA166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Lyrics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.Lyrics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		052160001CF4DDD0003FA166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Lyrics/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.Lyrics;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		052160021CF4DDD0003FA166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LyricsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.LyricsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyrics.app/Contents/MacOS/Lyrics";
+			};
+			name = Debug;
+		};
+		052160031CF4DDD0003FA166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LyricsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.LyricsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lyrics.app/Contents/MacOS/Lyrics";
+			};
+			name = Release;
+		};
+		052160051CF4DDD0003FA166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LyricsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.LyricsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lyrics;
+			};
+			name = Debug;
+		};
+		052160061CF4DDD0003FA166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LyricsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hamed.LyricsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Lyrics;
+			};
+			name = Release;
+		};
+		052160201CF4DDF6003FA166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lyrics Widget/Lyrics Widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Lyrics Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamed.Lyrics.Lyrics-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		052160211CF4DDF6003FA166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lyrics Widget/Lyrics Widget.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Lyrics Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hamed.Lyrics.Lyrics-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05215FCF1CF4DDD0003FA166 /* Build configuration list for PBXProject "Lyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05215FFC1CF4DDD0003FA166 /* Debug */,
+				05215FFD1CF4DDD0003FA166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05215FFE1CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "Lyrics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05215FFF1CF4DDD0003FA166 /* Debug */,
+				052160001CF4DDD0003FA166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052160011CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "LyricsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052160021CF4DDD0003FA166 /* Debug */,
+				052160031CF4DDD0003FA166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		052160041CF4DDD0003FA166 /* Build configuration list for PBXNativeTarget "LyricsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052160051CF4DDD0003FA166 /* Debug */,
+				052160061CF4DDD0003FA166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0521601F1CF4DDF6003FA166 /* Build configuration list for PBXNativeTarget "Lyrics Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052160201CF4DDF6003FA166 /* Debug */,
+				052160211CF4DDF6003FA166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05215FCC1CF4DDD0003FA166 /* Project object */;
+}
