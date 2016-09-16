@@ -71,8 +71,7 @@
             dispatch_async(queue, ^{
                 NSString *lyrics = [LyricsFinder findLyricsOf:[track name]by:[track artist]];
                 dispatch_async(dispatch_get_main_queue(), ^{
-                    self.trackLyrics.stringValue =  lyrics ;
-                    
+                    self.trackLyrics.stringValue =  lyrics ;                    
                     if (![lyrics isEqual: @""] ){
                         
                         
