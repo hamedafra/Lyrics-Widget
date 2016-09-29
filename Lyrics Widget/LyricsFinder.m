@@ -161,7 +161,7 @@
       isLyric = TRUE;
       firstLyricLine = TRUE;
     }
-    else if ([line isEqualToString:@"<p>NewPP limit report"]) {
+    else if ([line isEqualToString:@"External linksNominate as Song of the Day"]) {
       // first line after lyrics
       isLyric = FALSE;
     }
