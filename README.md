@@ -10,4 +10,4 @@ https://github.com/hamedafra/Lyrics-Widget/blob/master/Build/Lyrics.zip
 
 
 
-![Alt text](/screenshot/Screen Shot.png?raw=true "ScreenShot")
+![Screenshot](https://raw.githubusercontent.com/hamedafra/Lyrics-Widget/master/screenshot/Screen%20Shot.png)
