@@ -24,6 +24,8 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Shuttle needs Automation privileges in Security &amp; Privacy to run applescripts</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 Hamed. All rights reserved.</string>
 	<key>NSMainStoryboardFile</key>

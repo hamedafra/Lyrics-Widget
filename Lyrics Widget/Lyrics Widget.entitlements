@@ -8,12 +8,23 @@
 	<array>
 		<string>hamed.lyrics.com</string>
 	</array>
+	<key>com.apple.security.assets.music.read-write</key>
+	<true/>
+	<key>com.apple.security.automation.apple-events</key>
+	<true/>
 	<key>com.apple.security.network.client</key>
 	<true/>
 	<key>com.apple.security.network.server</key>
 	<true/>
 	<key>com.apple.security.scripting-targets</key>
 	<dict>
+		<key>com.apple.Music</key>
+		<array>
+			<string>com.apple.Music.library.read-write</string>
+			<string>com.apple.Music.playback</string>
+			<string>com.apple.Music.playerInfo</string>
+			<string>com.apple.security.temporary-exception.files.absolute-path.read-only</string>
+		</array>
 		<key>com.apple.iTunes</key>
 		<array>
 			<string>com.apple.iTunes.library.read-write</string>
@@ -24,7 +35,9 @@
 	</dict>
 	<key>com.apple.security.temporary-exception.apple-events</key>
 	<array>
+		<string>com.apple.Music</string>
 		<string>com.apple.iTunes</string>
+		<string>com.spotify.client</string>
 	</array>
 </dict>
 </plist>
