@@ -36,6 +36,7 @@
     artist = [artist stringByTrimmingCharactersInSet:[NSCharacterSet punctuationCharacterSet]];
     title = [title stringByReplacingOccurrencesOfString:@"\'" withString:@"-"];
     artist = [artist stringByReplacingOccurrencesOfString:@"\'" withString:@"-"];
+
     
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"^ebi" options:NSRegularExpressionCaseInsensitive error:&error];
@@ -45,6 +46,7 @@
     url = [url stringByAppendingString:@"/"];
     url = [url stringByAppendingString:[LyricsFinder escapeUri:title withSeparator:@"-"]];
     url = [url stringByAppendingString:@"/"];
+    url = [url stringByReplacingOccurrencesOfString:@"--" withString:@"-"];
     return url;
 }
 
@@ -250,7 +252,7 @@
       isLyric = TRUE;
       firstLyricLine = TRUE;
     }
-    else if ([line containsString:@"External linksNominate as Song of the Day"]) {
+    else if ([line containsString:@"External links"]) {
       // first line after lyrics
       isLyric = FALSE;
     }
