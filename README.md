@@ -6,7 +6,7 @@ Features:
 ```
 - Showing lyrics and artwork of the current plying song in Apple Music, Spotify and iTunes.  
 - Fetching lyrics from Musicmatch, Azlyrics and Wikia.  
-- Saving lyrics to ID3 tags of local Music library files.  
+- Saving lyrics to ID3 tags of local Music files.  
 ```
 ScreenShots:  
 
