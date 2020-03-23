@@ -234,9 +234,6 @@
                                                         options:NSXMLDocumentTidyHTML
                                                           error:nil];
 
-    if (document == nil) {
-      return nil;
-    }
   
   NSMutableArray *lyricLines = [NSMutableArray new];
   NSString *content = [document stringValue];
