@@ -11,7 +11,7 @@ Lyrics Widget for macOS Notification Center
 
 #### Installation:
 
-Copy the app to application folder then right click and click open. then close the app and add widget in notification center.
+Copy the app to application folder, then right click and click open. then close the app and add widget in notification center.
 
 ##### Note:
 
