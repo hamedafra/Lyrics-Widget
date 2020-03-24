@@ -22,6 +22,8 @@
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Lyrics Widget needs Automation privileges in Security &amp; Privacy for getting songs information</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
@@ -36,9 +38,7 @@
 		<key>com.apple.notificationcenter.widget.description</key>
 		<string>Lyrics Widget</string>
 	</dict>
-	<key>NSAppleEventsUsageDescription</key>
-	<string>Shuttle needs Automation privileges in Security &amp; Privacy to run applescripts</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 1398 Hamed. All rights reserved.</string>
+	<string>Copyright © 2020 Hamed Afra. All rights reserved.</string>
 </dict>
 </plist>
