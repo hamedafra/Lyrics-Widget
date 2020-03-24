@@ -30,6 +30,9 @@
 
 @property (weak) IBOutlet NSLayoutConstraint *imagewidth;
 @property (weak) IBOutlet NSLayoutConstraint *imageheight;
+@property (weak) IBOutlet NSLayoutConstraint *trackNameLabelTop;
+@property (weak) IBOutlet NSLayoutConstraint *artistNameAndAlbumNameLabelTop;
+@property (weak) IBOutlet NSLayoutConstraint *trackLyricsTop;
 
 @end
 
@@ -208,9 +211,12 @@
         self.artworkImageView.image = artworkImage;
     }
     else {
-        self.view.hidden = YES;
         self.imageheight.constant=0;
         self.imagewidth.constant=0;
+        self.trackNameLabelTop.constant=0;
+        self.artistNameAndAlbumNameLabelTop.constant=0;
+        self.trackLyricsTop.constant=0;
+        self.trackNameLabel.stringValue=@"Not playing";
     }
 }
 
