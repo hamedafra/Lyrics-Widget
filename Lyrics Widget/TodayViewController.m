@@ -217,6 +217,8 @@
         self.artistNameAndAlbumNameLabelTop.constant=0;
         self.trackLyricsTop.constant=0;
         self.trackNameLabel.stringValue=@"Not playing";
+        self.artistNameAndAlbumNameLabel.stringValue=@"";
+        self.trackLyrics.stringValue=@"";
     }
 }
 
