@@ -7,6 +7,13 @@ Lyrics Widget for macOS Notification Center
 * Fetching lyrics from Musicmatch, Azlyrics and Wikia.  
 * Saving lyrics to ID3 tags of local Music files.  
 
-ScreenShots:  
+#### [Download](https://github.com/hamedafra/Lyrics-Widget/releases/download/v1.0/Lyrics.zip)
+
+#### Note:
+
+Since this widget uses AppleEvents to communicate with apple music and spotify, you need to allow Automation privileges in Security & Privacy (Just click ok when access dialog box appears)
+
+##### ScreenShots:  
 
 <img src="https://raw.githubusercontent.com/hamedafra/Lyrics-Widget/master/screenshot/Screen%20Shot-1.png" width="40%"> <img src="https://raw.githubusercontent.com/hamedafra/Lyrics-Widget/master/screenshot/Screen%20Shot-2.png" width="39.75%">
+
