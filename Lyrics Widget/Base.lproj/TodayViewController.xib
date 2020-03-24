@@ -40,7 +40,7 @@
                     </connections>
                 </textField>
                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kc8-ig-vb8">
-                    <rect key="frame" x="3" y="1" width="314" height="15"/>
+                    <rect key="frame" x="3" y="1" width="311" height="15"/>
                     <textFieldCell key="cell" controlSize="small" selectable="YES" sendsActionOnEndEditing="YES" alignment="center" id="tnf-A5-eUq">
                         <font key="font" metaFont="label" size="12"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -48,7 +48,7 @@
                     </textFieldCell>
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N8T-ph-LXK" userLabel="Artwork Image View">
-                    <rect key="frame" x="90" y="77" width="140" height="140"/>
+                    <rect key="frame" x="89" y="77" width="140" height="140"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="140" id="Kc5-w9-BcE"/>
                         <constraint firstAttribute="height" constant="140" id="scw-Un-rh8"/>
@@ -70,7 +70,7 @@
                 <constraint firstItem="kc8-ig-vb8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="7KU-6o-BKl"/>
                 <constraint firstAttribute="trailing" secondItem="0EO-GD-pce" secondAttribute="trailing" constant="5" id="HNp-6P-jY3"/>
                 <constraint firstItem="Cx2-yV-duq" firstAttribute="top" secondItem="0EO-GD-pce" secondAttribute="bottom" constant="8" id="OGi-Cn-LQs"/>
-                <constraint firstAttribute="trailing" secondItem="kc8-ig-vb8" secondAttribute="trailing" constant="5" id="Oh4-z5-QKa"/>
+                <constraint firstAttribute="trailing" secondItem="kc8-ig-vb8" secondAttribute="trailing" constant="8" id="Oh4-z5-QKa"/>
                 <constraint firstItem="kc8-ig-vb8" firstAttribute="top" secondItem="Cx2-yV-duq" secondAttribute="bottom" constant="8" id="Wod-9y-2Hq"/>
                 <constraint firstItem="Cx2-yV-duq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="kb4-FV-XSZ"/>
                 <constraint firstItem="0EO-GD-pce" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="5" id="kcR-oM-1AL"/>
