@@ -55,7 +55,7 @@
  */
 +(NSString *) createazLyricsUrl:(NSString *)title by:(NSString *)artist
 {
-    NSString *url = @"http://www.azlyrics.com/lyrics/";
+    NSString *url = @"https://www.azlyrics.com/lyrics/";
     
     
     NSError *error = nil;
