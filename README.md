@@ -9,7 +9,11 @@ Lyrics Widget for macOS Notification Center
 
 #### [Download](https://github.com/hamedafra/Lyrics-Widget/releases/download/v1.0/Lyrics.zip)
 
-#### Note:
+#### Installation:
+
+Copy the app to application folder then right click and click open. then close the app and add widget in notification center.
+
+##### Note:
 
 Since this widget uses AppleEvents to communicate with apple music and spotify, you need to allow Automation privileges in Security & Privacy (Just click ok when access dialog box appears)
 
