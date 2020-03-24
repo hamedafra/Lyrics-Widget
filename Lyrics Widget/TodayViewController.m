@@ -42,6 +42,9 @@
 - (void)viewWillAppear
 {
     [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView:) name:@"com.apple.Music.playerInfo" object:nil];
+    [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView:) name:@"com.apple.iTunes.playerInfo" object:nil];
+    [[NSDistributedNotificationCenter defaultCenter] addObserver:self selector:@selector(updateView:) name:@"com.spotify.client.PlaybackStateChanged" object:nil];
+
 }
 
 - (void)viewWillDisappear
@@ -74,9 +77,6 @@
             
         }
         else{
-            
-            self.trackLyrics.stringValue =  @"" ;
-            
             
             dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
             dispatch_async(queue, ^{
@@ -139,9 +139,6 @@
         }
         else{
             
-            self.trackLyrics.stringValue =  @"" ;
-            
-            
             dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
             dispatch_async(queue, ^{
                 NSString *lyrics = [LyricsFinder findLyricsOf:[track name]by:[track artist]];
@@ -187,9 +184,6 @@
         self.trackNameLabel.stringValue = trackName ? trackName : @"";
         self.artistNameAndAlbumNameLabel.stringValue = [NSString stringWithFormat:@"%@%@%@", artistName ? artistName : @"", (artistName.length && albumName.length) ? @" - " : @"", albumName ? albumName : @""];
 
-        self.trackLyrics.stringValue =  @"" ;
-        
-        
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
         dispatch_async(queue, ^{
             NSString *lyrics = [LyricsFinder findLyricsOf:trackName by:artistName];
@@ -258,7 +252,7 @@
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult result))completionHandler {
     [self updateView:nil];
     
-    completionHandler(NCUpdateResultNewData);
+    //completionHandler(NCUpdateResultNewData);
 }
 
 @end
